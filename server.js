@@ -7,8 +7,8 @@ app.listen(PORT);
 app.get('/:location',(req,res)=>{
     var location=req.params.location
     var encodedAddress = encodeURIComponent(location);
-    var googleKey = 'AIzaSyAN2mOH17eJIuWqQHleUjdAmjdQXOcxFks';
-    var skyKey = '8050c5bdb7831c1610a00e266423484d';
+    var googleKey = 'YOUR-GOOGLE-API-TOKEN';
+    var skyKey = 'YOUR-SKY-API-TOKEN';
     var geocodeUrl = 'https://maps.googleapis.com/maps/api/geocode/json?key='+googleKey+'&address='+encodedAddress;
 
 
